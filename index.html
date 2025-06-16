@@ -26,28 +26,33 @@
               <h3>Balance</h3>
                 <div class="amount balance" id="totalbalance">R0.00</div>  
             </div>
+            </div>
        
             <!--Add transaction-->
 
             <div class="form-section">
                 <h3>Add Transaction</h3>
-                </div class="form-row">
-                <input type="text" id="description" placeholder="Description">
-                <input type="number" id="amount" placeholder="Amount">
-                <select name="type">
-                    <option value="income">Income</option>
-                    <option value="expense">Expense</option>
-                </select>
+                <div class="form-row">
+                    <input type="text" id="description" placeholder="Description">
+                    <input type="number" id="amount" placeholder="Amount">
+                    <select name="type" id="type">
+                        <option value="income">Income</option>
+                        <option value="expense">Expense</option>
+                    </select>
+                </div>
             </div>
-            <button onclick="addTransaction()">Add Transaction</button>
-
+                <button onclick="addTransaction()">Add Transaction</button>
+            
             <!--Transaction List-->
-               <div>
+            <div>
                 <h3>Recent Transaction</h3>
                 <div class="transcationList">
-                    <p>No transaction yet.Add one above!</p>
+                    <p>No transaction yet. Add one above!</p>
                 </div>
-               </div>
+            </div>
+        </div>
+
+    </div>
             
     
 </body>
